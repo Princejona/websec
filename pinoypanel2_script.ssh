@@ -15,7 +15,7 @@ touch /etc/openvpn/server2.conf
 
 cat <<\EOM >/etc/openvpn/login/config.sh
 #!/bin/bash
-HOST='66.45.227.43'
+HOST='webhosting2046.is.cc'
 USER='stspinoy_panel2'
 PASS='2Gf8txZWf2vz4Ju'
 DB='stspinoy_panel2'
@@ -28,7 +28,7 @@ EOM
 username=`head -n1 $1 | tail -1`   
 password=`head -n2 $1 | tail -1`
 
-HOST='66.45.227.43'
+HOST='webhosting2046.is.cc'
 USER='stspinoy_panel2'
 PASS='2Gf8txZWf2vz4Ju'
 DB='stspinoy_panel2'
