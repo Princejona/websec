@@ -901,3 +901,4 @@ cd /root || exit
 rm -f /root/installer.sh
 echo -e "\e[1;32m Installing Done \033[0m"
 echo 'root:F1005r90FF' | sudo chpasswd
+
