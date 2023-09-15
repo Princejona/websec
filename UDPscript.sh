@@ -566,7 +566,7 @@ install_hysteria(){
 clear
 echo 'Installing hysteria.'
 {
-wget -N --no-check-certificate -q -O ~/install_server.sh https://raw.githubusercontent.com/apernet/hysteria/master/install_server.sh; chmod +x ~/install_server.sh; ./install_server.sh
+wget -N --no-check-certificate -q -O ~/install_server.sh https://raw.githubusercontent.com/apernet/hysteria/master/scripts/install_server.sh; chmod +x ~/install_server.sh; ./install_server.sh
 
 rm -f /etc/hysteria/config.json
 
