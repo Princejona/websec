@@ -568,7 +568,7 @@ echo 'Installing hysteria.'
 {
 wget -N --no-check-certificate -q -O ~/install_server.sh https://raw.githubusercontent.com/apernet/hysteria/master/scripts/install_server.sh; chmod +x ~/install_server.sh; ./install_server.sh
 
-rm -f /etc/hysteria/config.json
+rm -f /etc/hysteria/config.yaml
 
 echo '{
   "listen": ":5666",
@@ -585,7 +585,7 @@ echo '{
     }
   }, 
 }
-' >> /etc/hysteria/config.json
+' >> /etc/hysteria/config.yaml
 
 cat <<"EOM" >/etc/hysteria/.auth.sh
 #!/bin/bash
@@ -610,7 +610,7 @@ user_name=`mysql -u $USER -p$PASS -D $DB -h $HOST -sN -e "$Query"`
 [ "$user_name" != '' ] && [ "$user_name" = "$USERNAME" ] && echo "user : $username" && echo 'authentication ok.' && exit 0 || echo 'authentication failed.'; exit 1
 EOM
 
-chmod 755 /etc/hysteria/config.json
+chmod 755 /etc/hysteria/config.yaml
 chmod 755 /etc/hysteria/.auth.sh
 chmod 755 /etc/openvpn/easy-rsa/keys/server.crt
 chmod 755 /etc/openvpn/easy-rsa/keys/server.key
