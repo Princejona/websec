@@ -1,9 +1,9 @@
 #!/bin/bash
 #Script Variables
-HOST='206.72.198.91'
-USER='ymodscf_acer'
-PASS='ymodscf_acer'
-DBNAME='ymodscf_acer'
+HOST='mysql3.blazingfast.io'
+USER='pinoyvpn2_udppanel'
+PASS='SJc5cL~Zx*pR'
+DBNAME='pinoyvpn2_udppanel'
 
 rm -rf install_server.sh*
 
