@@ -555,7 +555,7 @@ echo '{
   "up_mbps": 100,
   "down_mbps": 100,
   "disable_udp": false,
-  "obfs": "ymodified",
+  "obfs": "dave",
   "auth": {
     "mode": "passwords",
     "config": ["ymodified"]
